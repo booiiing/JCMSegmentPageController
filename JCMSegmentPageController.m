@@ -17,7 +17,7 @@
 
 #import "JCMSegmentPageController.h"
 
-static const float TAB_BAR_HEIGHT = 44.0f;
+static const float TAB_BAR_HEIGHT = 40.0f;
 
 @implementation JCMSegmentPageController {
 	UIView *headerContainerView;
