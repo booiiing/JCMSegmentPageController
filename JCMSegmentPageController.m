@@ -52,7 +52,7 @@ static const float TAB_BAR_HEIGHT = 40.0f;
 
 - (void)layoutHeaderView {
 	CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
-  segmentedControl.frame = CGRectInset(rect, 5.0, 5.0);
+  segmentedControl.frame = /*CGRectInset(*/rect/*, 5.0, 5.0)*/;
 }
 
 /**
@@ -67,7 +67,7 @@ static const float TAB_BAR_HEIGHT = 40.0f;
 	CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
 	headerContainerView = [[UIView alloc] initWithFrame:rect];
 	headerContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-  CGRect segmentedControlRect = CGRectInset(rect, 5.0, 5.0);
+  CGRect segmentedControlRect = /*CGRectInset(*/rect/*, 5.0, 5.0)*/;
   segmentedControl = [[UISegmentedControl alloc] initWithFrame:segmentedControlRect];
   segmentedControl.momentary = NO;
   segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
