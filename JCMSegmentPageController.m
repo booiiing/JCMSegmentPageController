@@ -167,6 +167,10 @@ static const float TAB_BAR_HEIGHT = 40.0f;
 		NSUInteger oldSelectedIndex = _selectedIndex;
 		_selectedIndex = newSelectedIndex;
 
+        if (oldSelectedIndex != NSNotFound) {
+            fromViewController = [self.viewControllers objectAtIndex:oldSelectedIndex];
+        }
+        
 		if (_selectedIndex != NSNotFound) {
       [segmentedControl setSelectedSegmentIndex:_selectedIndex];
 			toViewController = self.selectedViewController;
